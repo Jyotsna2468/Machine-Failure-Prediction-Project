@@ -67,8 +67,8 @@ if st.button("Predict Machine Failure"):
     prediction = model.predict(transformed_data)[0]
 
     if prediction == 1:
-        st.error("⚠️ Machine Failure Predicted")
+        st.error(" Machine Failure Predicted")
     else:
-        st.success("✅ No Machine Failure Predicted")
+        st.success("No Machine Failure Predicted")
     
         
