@@ -12,8 +12,8 @@ st.title("Machine Failure Prediction Project")
 st.subheader("By Jyotsna Shinde")
 
 # Load the preprocessing pipeline and model
-pre = joblib.load("pipeline.joblib")
-model = joblib.load("model.joblib")
+pre = joblib.load("preprocessing_pipeline.joblib")
+model = joblib.load("gradient_boosting_model.joblib")
 
 # Create input boxes
 Type = st.selectbox("Machine Type", options=["L", "M", "H"])
